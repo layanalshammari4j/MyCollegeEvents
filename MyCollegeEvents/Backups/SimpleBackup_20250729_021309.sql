@@ -1,0 +1,7 @@
+INSERT INTO Events (Title, Description, Date, CreatedBy, CreatedDate) VALUES ('ورشة البرمجة للمبتدئات', 'ورشة تعليمية لتعلم أساسيات البرمجة باستخدام C#', '2025-09-15 10:00:00', 'د. فاطمة أحمد', '2025-07-28 12:00:00')
+INSERT INTO Events (Title, Description, Date, CreatedBy, CreatedDate) VALUES ('محاضرة الذكاء الاصطناعي', 'محاضرة حول تطبيقات الذكاء الاصطناعي في الحياة العملية', '2025-10-01 14:00:00', 'د. سارة محمد', '2025-07-28 12:00:00')
+INSERT INTO Events (Title, Description, Date, CreatedBy, CreatedDate) VALUES ('مؤتمر التكنولوجيا النسائي', 'مؤتمر يهدف لتمكين المرأة في مجال التكنولوجيا', '2025-10-15 09:00:00', 'د. نورا علي', '2025-07-28 12:00:00')
+INSERT INTO Events (Title, Description, Date, CreatedBy, CreatedDate) VALUES ('الحب والغرام', 'بببببببببببببببب', '2025-07-29 01:55:00', 'بببببببببببببببببب', '2025-07-29 01:55:22')
+INSERT INTO Participants (Name, UniversityID, Department, EventID, AttendedBefore, WantCertificate, Email, Approved, RegistrationDate) VALUES ('نجيب الشامي ', '12345', 'تقنية المعلومات', 3, 0, 0, 'mona2022project@gmail.com', 1, '2025-07-29 01:35:33')
+INSERT INTO Participants (Name, UniversityID, Department, EventID, AttendedBefore, WantCertificate, Email, Approved, RegistrationDate) VALUES ('نجيب ', '12345', 'الهندسة', 1, 1, 1, 'mona2022project@gmail.com', 1, '2025-07-29 01:36:12')
+INSERT INTO Participants (Name, UniversityID, Department, EventID, AttendedBefore, WantCertificate, Email, Approved, RegistrationDate) VALUES ('نجيب ', '12345', 'علوم الحاسب', 2, 1, 1, 'mona2022project@gmail.com', 1, '2025-07-29 01:42:51')

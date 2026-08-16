@@ -1,0 +1,209 @@
+@{
+    ViewData["Title"] = "إرسال بريد جماعي";
+}
+
+<div class="container" dir="rtl">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card shadow">
+                <div class="card-header bg-warning text-dark text-center">
+                    <h3>📧 إرسال بريد إلكتروني جماعي</h3>
+                </div>
+                <div class="card-body">
+                    @if (TempData["SuccessMessage"] != null)
+                    {
+                        <div class="alert alert-success alert-dismissible fade show">
+                            @TempData["SuccessMessage"]
+                            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                        </div>
+                    }
+
+                    @if (TempData["ErrorMessage"] != null)
+                    {
+                        <div class="alert alert-danger alert-dismissible fade show">
+                            @TempData["ErrorMessage"]
+                            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                        </div>
+                    }
+
+                    @if (!ViewData.ModelState.IsValid)
+                    {
+                        <div class="alert alert-danger">
+                            <ul class="mb-0">
+                                @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                                {
+                                    <li>@error.ErrorMessage</li>
+                                }
+                            </ul>
+                        </div>
+                    }
+
+                    <form asp-action="SendEmails" method="post">
+                        <div class="form-group mb-3">
+                            <label class="form-label">🎯 الفعالية (اختياري)</label>
+                            <select name="eventId" class="form-select">
+                                <option value="">جميع الفعاليات</option>
+                                @foreach (var eventItem in ViewBag.Events)
+                                {
+                                    <option value="@eventItem.EventID">@eventItem.Title</option>
+                                }
+                            </select>
+                            <small class="form-text text-muted">
+                                اتركي فارغاً لإرسال البريد لجميع المشاركات
+                            </small>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <div class="form-check">
+                                <input type="checkbox" name="approvedOnly" value="true" checked class="form-check-input" id="approvedOnly" />
+                                <label class="form-check-label" for="approvedOnly">
+                                    ✅ إرسال للمشاركات المقبولة فقط
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label for="subject" class="form-label">📝 موضوع الرسالة</label>
+                            <input type="text" name="subject" id="subject" class="form-control" 
+                                   placeholder="أدخلي موضوع الرسالة" required />
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label for="message" class="form-label">💬 نص الرسالة</label>
+                            <textarea name="message" id="message" class="form-control" rows="8" 
+                                      placeholder="اكتبي نص الرسالة هنا..." required></textarea>
+                        </div>
+
+                        <div class="alert alert-info">
+                            <h6>📋 ملاحظات مهمة:</h6>
+                            <ul class="mb-0">
+                                <li>تأكدي من صحة نص الرسالة قبل الإرسال</li>
+                                <li>سيتم إرسال الرسالة لجميع المشاركات المحددة</li>
+                                <li>يمكنك استخدام HTML في نص الرسالة</li>
+                                <li>تأكدي من إعدادات البريد الإلكتروني في النظام</li>
+                            </ul>
+                        </div>
+
+                        <div class="card bg-light mb-3">
+                            <div class="card-body">
+                                <h6>📧 قوالب رسائل جاهزة:</h6>
+                                <div class="btn-group-vertical d-grid gap-2">
+                                    <button type="button" class="btn btn-outline-primary btn-sm" 
+                                            onclick="setTemplate('reminder')">
+                                        ⏰ تذكير بالفعالية
+                                    </button>
+                                    <button type="button" class="btn btn-outline-success btn-sm" 
+                                            onclick="setTemplate('thanks')">
+                                        🙏 شكر بعد الفعالية
+                                    </button>
+                                    <button type="button" class="btn btn-outline-info btn-sm" 
+                                            onclick="setTemplate('certificate')">
+                                        📜 إشعار بالشهادة
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-warning btn-lg px-5" 
+                                    onclick="return confirm('هل تريدين إرسال البريد الإلكتروني؟')">
+                                📤 إرسال البريد
+                            </button>
+                            <a href="@Url.Action("Index")" class="btn btn-secondary btn-lg px-5 ms-3">
+                                🔙 العودة للوحة التحكم
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function setTemplate(type) {
+        var subjectField = document.querySelector('input[name="subject"]');
+        var messageField = document.querySelector('textarea[name="message"]');
+
+        switch(type) {
+            case 'reminder':
+                subjectField.value = 'تذكير: فعالية قادمة';
+                messageField.value = `<div dir='rtl' style='font-family: Arial, sans-serif;'>
+<h2>تذكير بالفعالية القادمة</h2>
+<p>عزيزتي {Name}،</p>
+<p>نذكرك بالفعالية القادمة: <strong>{EventTitle}</strong></p>
+<p>نتطلع لحضورك ومشاركتك الفعالة.</p>
+<p>مع أطيب التحيات،<br>فريق إدارة الفعاليات</p>
+</div>`;
+                break;
+
+            case 'thanks':
+                subjectField.value = 'شكراً لمشاركتك في الفعالية';
+                messageField.value = `<div dir='rtl' style='font-family: Arial, sans-serif;'>
+<h2>شكراً لمشاركتك</h2>
+<p>عزيزتي {Name}،</p>
+<p>نشكرك على مشاركتك الرائعة في فعالية: <strong>{EventTitle}</strong></p>
+<p>نأمل أن تكوني قد استفدت من الفعالية.</p>
+<p>مع أطيب التحيات،<br>فريق إدارة الفعاليات</p>
+</div>`;
+                break;
+
+            case 'certificate':
+                subjectField.value = 'شهادة المشاركة جاهزة';
+                messageField.value = `<div dir='rtl' style='font-family: Arial, sans-serif;'>
+<h2>شهادة المشاركة</h2>
+<p>عزيزتي {Name}،</p>
+<p>تهانينا! شهادة مشاركتك في فعالية <strong>{EventTitle}</strong> جاهزة للاستلام.</p>
+<p>يمكنك الحصول عليها من مكتب شؤون الطالبات.</p>
+<p>مع أطيب التحيات،<br>فريق إدارة الفعاليات</p>
+</div>`;
+                break;
+        }
+    }
+</script>
+
+<script>
+    function setTemplate(type) {
+        const subjectField = document.getElementById('subject');
+        const messageField = document.getElementById('message');
+        
+        switch(type) {
+            case 'reminder':
+                subjectField.value = 'تذكير: فعالية قادمة';
+                messageField.value = `<div dir='rtl' style='font-family: Arial, sans-serif;'>
+<h2>تذكير بالفعالية القادمة</h2>
+<p>عزيزتي الطالبة،</p>
+<p>نذكرك بالفعالية القادمة التي سجلت فيها.</p>
+<p>نتطلع لحضورك ومشاركتك الفعالة.</p>
+<br>
+<p>مع أطيب التحيات</p>
+<p>فريق إدارة فعاليات الكلية</p>
+</div>`;
+                break;
+            case 'thanks':
+                subjectField.value = 'شكراً لمشاركتك';
+                messageField.value = `<div dir='rtl' style='font-family: Arial, sans-serif;'>
+<h2>شكراً لمشاركتك الرائعة</h2>
+<p>عزيزتي الطالبة،</p>
+<p>نشكرك على مشاركتك الفعالة في الفعالية.</p>
+<p>نأمل أن تكوني استفدت من المحتوى المقدم.</p>
+<br>
+<p>مع أطيب التحيات</p>
+<p>فريق إدارة فعاليات الكلية</p>
+</div>`;
+                break;
+            case 'certificate':
+                subjectField.value = 'شهادة المشاركة جاهزة';
+                messageField.value = `<div dir='rtl' style='font-family: Arial, sans-serif;'>
+<h2>شهادة المشاركة جاهزة</h2>
+<p>عزيزتي الطالبة،</p>
+<p>شهادة مشاركتك في الفعالية جاهزة للاستلام.</p>
+<p>يمكنك الحصول عليها من مكتب إدارة الفعاليات.</p>
+<br>
+<p>مع أطيب التحيات</p>
+<p>فريق إدارة فعاليات الكلية</p>
+</div>`;
+                break;
+        }
+    }
+</script>

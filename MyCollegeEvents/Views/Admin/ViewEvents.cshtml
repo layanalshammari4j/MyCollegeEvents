@@ -1,0 +1,193 @@
+@model IEnumerable<MyCollegeEvents.Models.Event>
+@{
+    ViewData["Title"] = "عرض الفعاليات";
+}
+
+<div class="container-fluid" dir="rtl">
+    <div class="row">
+        <div class="col-12">
+            <div class="card shadow">
+                <div class="card-header bg-success text-white d-flex justify-content-between align-items-center">
+                    <h3 class="mb-0">📅 جميع الفعاليات</h3>
+                    <a href="@Url.Action("AddEvent")" class="btn btn-light">
+                        ➕ إضافة فعالية جديدة
+                    </a>
+                </div>
+                <div class="card-body">
+                    @if (TempData["SuccessMessage"] != null)
+                    {
+                        <div class="alert alert-success alert-dismissible fade show">
+                            @TempData["SuccessMessage"]
+                            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                        </div>
+                    }
+
+                    @if (Model != null && Model.Any())
+                    {
+                        <div class="row">
+                            @foreach (var eventItem in Model)
+                            {
+                                <div class="col-lg-6 col-xl-4 mb-4">
+                                    <div class="card h-100 border-0 shadow-sm">
+                                        <div class="card-header @(eventItem.Date > DateTime.Now ? "bg-primary" : "bg-secondary") text-white">
+                                            <h5 class="card-title mb-0">@eventItem.Title</h5>
+                                            <small>
+                                                @if (eventItem.Date > DateTime.Now)
+                                                {
+                                                    <span class="badge bg-light text-dark">قادمة</span>
+                                                }
+                                                else
+                                                {
+                                                    <span class="badge bg-light text-dark">منتهية</span>
+                                                }
+                                            </small>
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-text">@eventItem.Description</p>
+                                            
+                                            <div class="mb-2">
+                                                <strong>📅 التاريخ:</strong> 
+                                                @eventItem.Date.ToString("dd/MM/yyyy - HH:mm")
+                                            </div>
+                                            
+                                            <div class="mb-2">
+                                                <strong>👩‍🏫 المنظمة:</strong> 
+                                                @eventItem.CreatedBy
+                                            </div>
+                                            
+                                            <div class="mb-2">
+                                                <strong>📊 عدد المشاركات:</strong> 
+                                                <span class="badge bg-info">@eventItem.Participants.Count</span>
+                                            </div>
+                                            
+                                            <div class="mb-2">
+                                                <strong>✅ المقبولات:</strong> 
+                                                <span class="badge bg-success">@eventItem.Participants.Count(p => p.Approved)</span>
+                                            </div>
+                                            
+                                            <div class="mb-3">
+                                                <strong>⏳ في الانتظار:</strong> 
+                                                <span class="badge bg-warning">@eventItem.Participants.Count(p => !p.Approved)</span>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer bg-light">
+                                            <div class="btn-group w-100 mb-2" role="group">
+                                                <a href="@Url.Action("ViewParticipants", new { eventId = eventItem.EventID })"
+                                                   class="btn btn-outline-primary btn-sm">
+                                                    👥 المشاركات
+                                                </a>
+                                                <a href="@Url.Action("ExportExcel", new { eventId = eventItem.EventID })"
+                                                   class="btn btn-outline-success btn-sm">
+                                                    📗 Excel
+                                                </a>
+                                                <a href="@Url.Action("SendEmails", new { eventId = eventItem.EventID })"
+                                                   class="btn btn-outline-warning btn-sm">
+                                                    📧 بريد
+                                                </a>
+                                            </div>
+                                            <div class="btn-group w-100" role="group">
+                                                <a href="@Url.Action("EditEvent", new { id = eventItem.EventID })"
+                                                   class="btn btn-warning btn-sm">
+                                                    ✏️ تعديل
+                                                </a>
+                                                <button type="button" class="btn btn-danger btn-sm"
+                                                        onclick="confirmDelete(@eventItem.EventID, '@eventItem.Title')">
+                                                    🗑️ حذف
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="alert alert-info text-center">
+                            <h5>📢 لا توجد فعاليات</h5>
+                            <p>لم يتم إنشاء أي فعاليات بعد.</p>
+                            <a href="@Url.Action("AddEvent")" class="btn btn-primary">
+                                ➕ إضافة أول فعالية
+                            </a>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- إحصائيات سريعة -->
+    @if (Model != null && Model.Any())
+    {
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header bg-secondary text-white">
+                        <h5 class="mb-0">📊 إحصائيات عامة</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row text-center">
+                            <div class="col-md-3">
+                                <div class="card bg-primary text-white">
+                                    <div class="card-body">
+                                        <h3>@Model.Count()</h3>
+                                        <p class="mb-0">إجمالي الفعاليات</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card bg-success text-white">
+                                    <div class="card-body">
+                                        <h3>@Model.Count(e => e.Date > DateTime.Now)</h3>
+                                        <p class="mb-0">فعاليات قادمة</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card bg-info text-white">
+                                    <div class="card-body">
+                                        <h3>@Model.Sum(e => e.Participants.Count)</h3>
+                                        <p class="mb-0">إجمالي المشاركات</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card bg-warning text-white">
+                                    <div class="card-body">
+                                        <h3>@Model.Sum(e => e.Participants.Count(p => p.Approved))</h3>
+                                        <p class="mb-0">المشاركات المقبولة</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+<!-- نموذج تأكيد الحذف -->
+<form id="deleteForm" method="post" style="display: none;">
+    @Html.AntiForgeryToken()
+</form>
+
+<script>
+    function confirmDelete(eventId, eventTitle) {
+        if (confirm(`هل أنت متأكدة من حذف الفعالية "${eventTitle}"؟\n\nتحذير: لا يمكن التراجع عن هذا الإجراء!`)) {
+            var form = document.getElementById('deleteForm');
+            form.action = '@Url.Action("DeleteEvent")/' + eventId;
+            form.submit();
+        }
+    }
+</script>
+
+<style>
+    .card {
+        transition: transform 0.2s;
+    }
+    
+    .card:hover {
+        transform: translateY(-2px);
+    }
+</style>

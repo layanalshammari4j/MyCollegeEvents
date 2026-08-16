@@ -1,0 +1,89 @@
+@model MyCollegeEvents.Models.Event
+@{
+    ViewData["Title"] = "تعديل الفعالية";
+}
+
+<div class="container" dir="rtl">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card shadow">
+                <div class="card-header bg-warning text-dark text-center">
+                    <h3>✏️ تعديل الفعالية</h3>
+                </div>
+                <div class="card-body">
+                    @if (TempData["ErrorMessage"] != null)
+                    {
+                        <div class="alert alert-danger alert-dismissible fade show">
+                            @TempData["ErrorMessage"]
+                            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                        </div>
+                    }
+
+                    <form asp-action="EditEvent" method="post">
+                        <input type="hidden" asp-for="EventID" />
+                        <input type="hidden" asp-for="CreatedDate" />
+                        
+                        <div class="row">
+                            <div class="col-md-12 mb-3">
+                                <label asp-for="Title" class="form-label">📝 عنوان الفعالية</label>
+                                <input asp-for="Title" class="form-control" placeholder="أدخلي عنوان الفعالية" required />
+                                <span asp-validation-for="Title" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12 mb-3">
+                                <label asp-for="Description" class="form-label">📄 وصف الفعالية</label>
+                                <textarea asp-for="Description" class="form-control" rows="4" 
+                                          placeholder="أدخلي وصفاً مفصلاً للفعالية" required></textarea>
+                                <span asp-validation-for="Description" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="Date" class="form-label">📅 تاريخ ووقت الفعالية</label>
+                                <input asp-for="Date" type="datetime-local" class="form-control" required />
+                                <span asp-validation-for="Date" class="text-danger"></span>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="CreatedBy" class="form-label">🏢 اسم المنظمة</label>
+                                <input asp-for="CreatedBy" class="form-control" placeholder="اسم الجهة المنظمة" required />
+                                <span asp-validation-for="CreatedBy" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="row mt-4">
+                            <div class="col-12">
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                                    <button type="submit" class="btn btn-warning btn-lg px-5">
+                                        ✅ حفظ التعديلات
+                                    </button>
+                                    <a href="@Url.Action("ViewEvents")" class="btn btn-secondary btn-lg px-5">
+                                        ❌ إلغاء
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    
+    <script>
+        // تعيين التاريخ الحالي كحد أدنى
+        document.addEventListener('DOMContentLoaded', function() {
+            var dateInput = document.querySelector('input[type="datetime-local"]');
+            if (dateInput) {
+                var now = new Date();
+                now.setMinutes(now.getMinutes() - now.getTimezoneOffset());
+                dateInput.min = now.toISOString().slice(0, 16);
+            }
+        });
+    </script>
+}

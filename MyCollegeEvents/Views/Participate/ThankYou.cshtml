@@ -1,0 +1,97 @@
+@{
+    ViewData["Title"] = "شكراً لك";
+}
+
+<div class="container" dir="rtl">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card shadow-lg border-0">
+                <div class="card-body text-center p-5">
+                    <div class="mb-4">
+                        <i class="fas fa-check-circle text-success" style="font-size: 5rem;"></i>
+                    </div>
+                    
+                    <h1 class="text-success mb-4">🎉 تم التسجيل بنجاح!</h1>
+                    
+                    @if (ViewBag.ParticipantName != null)
+                    {
+                        <h3 class="mb-3">مرحباً @ViewBag.ParticipantName</h3>
+                    }
+                    
+                    @if (ViewBag.EventTitle != null)
+                    {
+                        <p class="lead mb-4">
+                            تم تسجيلك بنجاح في فعالية: <strong class="text-primary">@ViewBag.EventTitle</strong>
+                        </p>
+                    }
+
+                    <div class="alert alert-info">
+                        <h5>📧 ماذا بعد؟</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-2">✅ تم إرسال رسالة تأكيد إلى بريدك الإلكتروني</li>
+                            <li class="mb-2">👩‍💼 ستقوم المشرفة بمراجعة طلبك</li>
+                            <li class="mb-2">📬 ستصلك رسالة موافقة نهائية قريباً</li>
+                            <li class="mb-2">📅 تأكدي من حضور الفعالية في الموعد المحدد</li>
+                        </ul>
+                    </div>
+
+                    <div class="row mt-4">
+                        <div class="col-md-6 mb-3">
+                            <div class="card bg-light">
+                                <div class="card-body">
+                                    <h6 class="card-title">📞 للاستفسار</h6>
+                                    <p class="card-text small">
+                                        يمكنك التواصل مع إدارة الفعاليات<br>
+                                        للاستفسار عن حالة طلبك
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="card bg-light">
+                                <div class="card-body">
+                                    <h6 class="card-title">📜 الشهادة</h6>
+                                    <p class="card-text small">
+                                        إذا طلبت شهادة مشاركة<br>
+                                        ستحصلين عليها بعد انتهاء الفعالية
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-4">
+                        <a href="@Url.Action("Index", "Home")" class="btn btn-primary btn-lg px-5 me-3">
+                            🏠 العودة للصفحة الرئيسية
+                        </a>
+                        <a href="@Url.Action("Register", "Participate")" class="btn btn-success btn-lg px-5">
+                            ➕ تسجيل في فعالية أخرى
+                        </a>
+                    </div>
+
+                    <div class="mt-5 pt-4 border-top">
+                        <p class="text-muted">
+                            <small>
+                                💡 نصيحة: احتفظي برقم التسجيل الذي وصلك في البريد الإلكتروني للمراجعة المستقبلية
+                            </small>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .card {
+        border-radius: 15px;
+    }
+    
+    .btn {
+        border-radius: 25px;
+    }
+    
+    .alert {
+        border-radius: 10px;
+    }
+</style>

@@ -1,0 +1,121 @@
+@model MyCollegeEvents.Models.Participant
+@{
+    ViewData["Title"] = "تسجيل المشاركة";
+}
+
+<div class="container" dir="rtl">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card shadow">
+                <div class="card-header bg-success text-white text-center">
+                    <h3>📝 نموذج تسجيل المشاركة</h3>
+                </div>
+                <div class="card-body">
+                    @if (!ViewData.ModelState.IsValid)
+                    {
+                        <div class="alert alert-danger">
+                            <ul class="mb-0">
+                                @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                                {
+                                    <li>@error.ErrorMessage</li>
+                                }
+                            </ul>
+                        </div>
+                    }
+
+                    <form asp-action="Register" method="post">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group mb-3">
+                                    <label asp-for="Name" class="form-label">👤 الاسم الكامل</label>
+                                    <input asp-for="Name" class="form-control" placeholder="أدخلي اسمك الكامل" />
+                                    <span asp-validation-for="Name" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group mb-3">
+                                    <label asp-for="UniversityID" class="form-label">🆔 الرقم الجامعي</label>
+                                    <input asp-for="UniversityID" class="form-control" placeholder="مثال: 202012345" />
+                                    <span asp-validation-for="UniversityID" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group mb-3">
+                                    <label asp-for="Department" class="form-label">🏫 القسم</label>
+                                    <select asp-for="Department" asp-items="ViewBag.Departments" class="form-select">
+                                        <option value="">اختاري القسم</option>
+                                    </select>
+                                    <span asp-validation-for="Department" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group mb-3">
+                                    <label asp-for="Email" class="form-label">📧 البريد الإلكتروني</label>
+                                    <input asp-for="Email" type="email" class="form-control" placeholder="example@email.com" />
+                                    <span asp-validation-for="Email" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="EventID" class="form-label">🎯 الفعالية</label>
+                            <select asp-for="EventID" asp-items="ViewBag.Events" class="form-select">
+                                <option value="">اختاري الفعالية</option>
+                            </select>
+                            <span asp-validation-for="EventID" class="text-danger"></span>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group mb-3">
+                                    <div class="form-check">
+                                        <input asp-for="AttendedBefore" class="form-check-input" type="checkbox" />
+                                        <label asp-for="AttendedBefore" class="form-check-label">
+                                            ✅ شاركت في فعاليات سابقة
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group mb-3">
+                                    <div class="form-check">
+                                        <input asp-for="WantCertificate" class="form-check-input" type="checkbox" />
+                                        <label asp-for="WantCertificate" class="form-check-label">
+                                            📜 أريد شهادة مشاركة
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="alert alert-info">
+                            <h6>📋 ملاحظات مهمة:</h6>
+                            <ul class="mb-0">
+                                <li>تأكدي من صحة جميع البيانات قبل الإرسال</li>
+                                <li>ستصلك رسالة تأكيد على بريدك الإلكتروني</li>
+                                <li>سيتم مراجعة طلبك من قبل المشرفة</li>
+                                <li>ستصلك رسالة موافقة نهائية عند قبول طلبك</li>
+                            </ul>
+                        </div>
+
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-success btn-lg px-5">
+                                🚀 إرسال طلب المشاركة
+                            </button>
+                            <a href="@Url.Action("Index", "Home")" class="btn btn-secondary btn-lg px-5 ms-3">
+                                🔙 العودة للفعاليات
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

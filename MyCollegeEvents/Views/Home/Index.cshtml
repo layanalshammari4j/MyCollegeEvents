@@ -1,0 +1,79 @@
+﻿@model IEnumerable<MyCollegeEvents.Models.Event>
+@{
+    ViewData["Title"] = "الفعاليات المتاحة";
+}
+
+<div class="container-fluid" dir="rtl">
+    <div class="row">
+        <div class="col-12">
+            <div class="jumbotron bg-primary text-white text-center mb-4">
+                <h1 class="display-4">🎓 نظام إدارة فعاليات الكلية</h1>
+                <p class="lead">اكتشفي الفعاليات المتاحة وسجلي مشاركتك الآن!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <h2 class="mb-4">📅 الفعاليات المتاحة للتسجيل</h2>
+        </div>
+    </div>
+
+    @if (Model != null && Model.Any())
+    {
+        <div class="row">
+            @foreach (var eventItem in Model)
+            {
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-header bg-info text-white">
+                            <h5 class="card-title mb-0">@eventItem.Title</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">@eventItem.Description</p>
+                            <div class="mb-3">
+                                <strong>📅 التاريخ:</strong> @eventItem.Date.ToString("dd/MM/yyyy - HH:mm")
+                            </div>
+                            <div class="mb-3">
+                                <strong>👩‍🏫 المنظمة:</strong> @eventItem.CreatedBy
+                            </div>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="@Url.Action("Register", "Participate", new { eventId = eventItem.EventID })"
+                               class="btn btn-success btn-lg">
+                                ✨ سجلي الآن
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <div class="row">
+            <div class="col-12">
+                <div class="alert alert-info text-center">
+                    <h4>📢 لا توجد فعاليات متاحة حالياً</h4>
+                    <p>تابعي الموقع للحصول على آخر التحديثات حول الفعاليات القادمة.</p>
+                </div>
+            </div>
+        </div>
+    }
+
+    <div class="row mt-5">
+        <div class="col-12">
+            <div class="card bg-light">
+                <div class="card-body text-center">
+                    <h5>💡 نصائح للمشاركة</h5>
+                    <ul class="list-unstyled">
+                        <li>✅ تأكدي من صحة بياناتك قبل التسجيل</li>
+                        <li>📧 ستصلك رسالة تأكيد على بريدك الإلكتروني</li>
+                        <li>⏰ سجلي مبكراً لضمان مقعدك</li>
+                        <li>📜 يمكنك طلب شهادة مشاركة</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

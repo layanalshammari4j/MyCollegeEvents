@@ -1,0 +1,92 @@
+@model MyCollegeEvents.Models.Event
+@{
+    ViewData["Title"] = "إضافة فعالية جديدة";
+}
+
+<div class="container" dir="rtl">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card shadow">
+                <div class="card-header bg-primary text-white text-center">
+                    <h3>➕ إضافة فعالية جديدة</h3>
+                </div>
+                <div class="card-body">
+                    @if (TempData["SuccessMessage"] != null)
+                    {
+                        <div class="alert alert-success alert-dismissible fade show">
+                            @TempData["SuccessMessage"]
+                            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                        </div>
+                    }
+
+                    @if (!ViewData.ModelState.IsValid)
+                    {
+                        <div class="alert alert-danger">
+                            <ul class="mb-0">
+                                @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                                {
+                                    <li>@error.ErrorMessage</li>
+                                }
+                            </ul>
+                        </div>
+                    }
+
+                    <form asp-action="AddEvent" method="post">
+                        <div class="form-group mb-3">
+                            <label asp-for="Title" class="form-label">🎯 عنوان الفعالية</label>
+                            <input asp-for="Title" class="form-control" placeholder="أدخلي عنوان الفعالية" />
+                            <span asp-validation-for="Title" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="Description" class="form-label">📝 وصف الفعالية</label>
+                            <textarea asp-for="Description" class="form-control" rows="4" 
+                                      placeholder="اكتبي وصفاً مفصلاً عن الفعالية وأهدافها"></textarea>
+                            <span asp-validation-for="Description" class="text-danger"></span>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group mb-3">
+                                    <label asp-for="Date" class="form-label">📅 تاريخ ووقت الفعالية</label>
+                                    <input asp-for="Date" type="datetime-local" class="form-control" />
+                                    <span asp-validation-for="Date" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group mb-3">
+                                    <label asp-for="CreatedBy" class="form-label">👩‍🏫 اسم المنظمة</label>
+                                    <input asp-for="CreatedBy" class="form-control" placeholder="د. اسم المشرفة" />
+                                    <span asp-validation-for="CreatedBy" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="alert alert-info">
+                            <h6>📋 ملاحظات:</h6>
+                            <ul class="mb-0">
+                                <li>تأكدي من صحة التاريخ والوقت</li>
+                                <li>اكتبي وصفاً واضحاً وجذاباً للفعالية</li>
+                                <li>ستظهر الفعالية للطالبات فور إضافتها</li>
+                                <li>يمكنك تعديل الفعالية لاحقاً إذا لزم الأمر</li>
+                            </ul>
+                        </div>
+
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-success btn-lg px-5">
+                                ✅ إضافة الفعالية
+                            </button>
+                            <a href="@Url.Action("Index")" class="btn btn-secondary btn-lg px-5 ms-3">
+                                🔙 العودة للوحة التحكم
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

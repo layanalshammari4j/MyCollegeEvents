@@ -1,0 +1,403 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\\u0627\u0639\u0645\u0627\u0644 \u062D\u062F\u064A\u062B\u0629\\\u062A\u0642\u0631\u064A\u0631 \u062A\u062F\u0631\u064A\u0628\\College Event Management System\\MyCollegeEvents\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F9FB2EA3-CF76-4B5B-97CD-0CDA1468E4EB}|MyCollegeEvents.csproj|f:\\\u0627\u0639\u0645\u0627\u0644 \u062D\u062F\u064A\u062B\u0629\\\u062A\u0642\u0631\u064A\u0631 \u062A\u062F\u0631\u064A\u0628\\college event management system\\mycollegeevents\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F9FB2EA3-CF76-4B5B-97CD-0CDA1468E4EB}|MyCollegeEvents.csproj|solutionrelative:views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9FB2EA3-CF76-4B5B-97CD-0CDA1468E4EB}|MyCollegeEvents.csproj|f:\\\u0627\u0639\u0645\u0627\u0644 \u062D\u062F\u064A\u062B\u0629\\\u062A\u0642\u0631\u064A\u0631 \u062A\u062F\u0631\u064A\u0628\\college event management system\\mycollegeevents\\email_setup_guide.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{F9FB2EA3-CF76-4B5B-97CD-0CDA1468E4EB}|MyCollegeEvents.csproj|solutionrelative:email_setup_guide.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9FB2EA3-CF76-4B5B-97CD-0CDA1468E4EB}|MyCollegeEvents.csproj|f:\\\u0627\u0639\u0645\u0627\u0644 \u062D\u062F\u064A\u062B\u0629\\\u062A\u0642\u0631\u064A\u0631 \u062A\u062F\u0631\u064A\u0628\\college event management system\\mycollegeevents\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9FB2EA3-CF76-4B5B-97CD-0CDA1468E4EB}|MyCollegeEvents.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9FB2EA3-CF76-4B5B-97CD-0CDA1468E4EB}|MyCollegeEvents.csproj|f:\\\u0627\u0639\u0645\u0627\u0644 \u062D\u062F\u064A\u062B\u0629\\\u062A\u0642\u0631\u064A\u0631 \u062A\u062F\u0631\u064A\u0628\\college event management system\\mycollegeevents\\services\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9FB2EA3-CF76-4B5B-97CD-0CDA1468E4EB}|MyCollegeEvents.csproj|solutionrelative:services\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9FB2EA3-CF76-4B5B-97CD-0CDA1468E4EB}|MyCollegeEvents.csproj|f:\\\u0627\u0639\u0645\u0627\u0644 \u062D\u062F\u064A\u062B\u0629\\\u062A\u0642\u0631\u064A\u0631 \u062A\u062F\u0631\u064A\u0628\\college event management system\\mycollegeevents\\services\\ibackupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9FB2EA3-CF76-4B5B-97CD-0CDA1468E4EB}|MyCollegeEvents.csproj|solutionrelative:services\\ibackupservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9FB2EA3-CF76-4B5B-97CD-0CDA1468E4EB}|MyCollegeEvents.csproj|f:\\\u0627\u0639\u0645\u0627\u0644 \u062D\u062F\u064A\u062B\u0629\\\u062A\u0642\u0631\u064A\u0631 \u062A\u062F\u0631\u064A\u0628\\college event management system\\mycollegeevents\\services\\exportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9FB2EA3-CF76-4B5B-97CD-0CDA1468E4EB}|MyCollegeEvents.csproj|solutionrelative:services\\exportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9FB2EA3-CF76-4B5B-97CD-0CDA1468E4EB}|MyCollegeEvents.csproj|f:\\\u0627\u0639\u0645\u0627\u0644 \u062D\u062F\u064A\u062B\u0629\\\u062A\u0642\u0631\u064A\u0631 \u062A\u062F\u0631\u064A\u0628\\college event management system\\mycollegeevents\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F9FB2EA3-CF76-4B5B-97CD-0CDA1468E4EB}|MyCollegeEvents.csproj|solutionrelative:views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9FB2EA3-CF76-4B5B-97CD-0CDA1468E4EB}|MyCollegeEvents.csproj|f:\\\u0627\u0639\u0645\u0627\u0644 \u062D\u062F\u064A\u062B\u0629\\\u062A\u0642\u0631\u064A\u0631 \u062A\u062F\u0631\u064A\u0628\\college event management system\\mycollegeevents\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F9FB2EA3-CF76-4B5B-97CD-0CDA1468E4EB}|MyCollegeEvents.csproj|solutionrelative:views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9FB2EA3-CF76-4B5B-97CD-0CDA1468E4EB}|MyCollegeEvents.csproj|f:\\\u0627\u0639\u0645\u0627\u0644 \u062D\u062F\u064A\u062B\u0629\\\u062A\u0642\u0631\u064A\u0631 \u062A\u062F\u0631\u064A\u0628\\college event management system\\mycollegeevents\\views\\admin\\viewparticipants.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F9FB2EA3-CF76-4B5B-97CD-0CDA1468E4EB}|MyCollegeEvents.csproj|solutionrelative:views\\admin\\viewparticipants.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9FB2EA3-CF76-4B5B-97CD-0CDA1468E4EB}|MyCollegeEvents.csproj|f:\\\u0627\u0639\u0645\u0627\u0644 \u062D\u062F\u064A\u062B\u0629\\\u062A\u0642\u0631\u064A\u0631 \u062A\u062F\u0631\u064A\u0628\\college event management system\\mycollegeevents\\views\\admin\\sendemails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F9FB2EA3-CF76-4B5B-97CD-0CDA1468E4EB}|MyCollegeEvents.csproj|solutionrelative:views\\admin\\sendemails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9FB2EA3-CF76-4B5B-97CD-0CDA1468E4EB}|MyCollegeEvents.csproj|f:\\\u0627\u0639\u0645\u0627\u0644 \u062D\u062F\u064A\u062B\u0629\\\u062A\u0642\u0631\u064A\u0631 \u062A\u062F\u0631\u064A\u0628\\college event management system\\mycollegeevents\\views\\admin\\addevent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F9FB2EA3-CF76-4B5B-97CD-0CDA1468E4EB}|MyCollegeEvents.csproj|solutionrelative:views\\admin\\addevent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9FB2EA3-CF76-4B5B-97CD-0CDA1468E4EB}|MyCollegeEvents.csproj|f:\\\u0627\u0639\u0645\u0627\u0644 \u062D\u062F\u064A\u062B\u0629\\\u062A\u0642\u0631\u064A\u0631 \u062A\u062F\u0631\u064A\u0628\\college event management system\\mycollegeevents\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9FB2EA3-CF76-4B5B-97CD-0CDA1468E4EB}|MyCollegeEvents.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9FB2EA3-CF76-4B5B-97CD-0CDA1468E4EB}|MyCollegeEvents.csproj|f:\\\u0627\u0639\u0645\u0627\u0644 \u062D\u062F\u064A\u062B\u0629\\\u062A\u0642\u0631\u064A\u0631 \u062A\u062F\u0631\u064A\u0628\\college event management system\\mycollegeevents\\services\\iexportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9FB2EA3-CF76-4B5B-97CD-0CDA1468E4EB}|MyCollegeEvents.csproj|solutionrelative:services\\iexportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9FB2EA3-CF76-4B5B-97CD-0CDA1468E4EB}|MyCollegeEvents.csproj|f:\\\u0627\u0639\u0645\u0627\u0644 \u062D\u062F\u064A\u062B\u0629\\\u062A\u0642\u0631\u064A\u0631 \u062A\u062F\u0631\u064A\u0628\\college event management system\\mycollegeevents\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9FB2EA3-CF76-4B5B-97CD-0CDA1468E4EB}|MyCollegeEvents.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9FB2EA3-CF76-4B5B-97CD-0CDA1468E4EB}|MyCollegeEvents.csproj|f:\\\u0627\u0639\u0645\u0627\u0644 \u062D\u062F\u064A\u062B\u0629\\\u062A\u0642\u0631\u064A\u0631 \u062A\u062F\u0631\u064A\u0628\\college event management system\\mycollegeevents\\migrations\\20250728222821_fixseeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9FB2EA3-CF76-4B5B-97CD-0CDA1468E4EB}|MyCollegeEvents.csproj|solutionrelative:migrations\\20250728222821_fixseeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9FB2EA3-CF76-4B5B-97CD-0CDA1468E4EB}|MyCollegeEvents.csproj|f:\\\u0627\u0639\u0645\u0627\u0644 \u062D\u062F\u064A\u062B\u0629\\\u062A\u0642\u0631\u064A\u0631 \u062A\u062F\u0631\u064A\u0628\\college event management system\\mycollegeevents\\migrations\\20250728222721_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9FB2EA3-CF76-4B5B-97CD-0CDA1468E4EB}|MyCollegeEvents.csproj|solutionrelative:migrations\\20250728222721_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9FB2EA3-CF76-4B5B-97CD-0CDA1468E4EB}|MyCollegeEvents.csproj|f:\\\u0627\u0639\u0645\u0627\u0644 \u062D\u062F\u064A\u062B\u0629\\\u062A\u0642\u0631\u064A\u0631 \u062A\u062F\u0631\u064A\u0628\\college event management system\\mycollegeevents\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9FB2EA3-CF76-4B5B-97CD-0CDA1468E4EB}|MyCollegeEvents.csproj|solutionrelative:services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9FB2EA3-CF76-4B5B-97CD-0CDA1468E4EB}|MyCollegeEvents.csproj|f:\\\u0627\u0639\u0645\u0627\u0644 \u062D\u062F\u064A\u062B\u0629\\\u062A\u0642\u0631\u064A\u0631 \u062A\u062F\u0631\u064A\u0628\\college event management system\\mycollegeevents\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{F9FB2EA3-CF76-4B5B-97CD-0CDA1468E4EB}|MyCollegeEvents.csproj|solutionrelative:wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9FB2EA3-CF76-4B5B-97CD-0CDA1468E4EB}|MyCollegeEvents.csproj|f:\\\u0627\u0639\u0645\u0627\u0644 \u062D\u062F\u064A\u062B\u0629\\\u062A\u0642\u0631\u064A\u0631 \u062A\u062F\u0631\u064A\u0628\\college event management system\\mycollegeevents\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F9FB2EA3-CF76-4B5B-97CD-0CDA1468E4EB}|MyCollegeEvents.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9FB2EA3-CF76-4B5B-97CD-0CDA1468E4EB}|MyCollegeEvents.csproj|f:\\\u0627\u0639\u0645\u0627\u0644 \u062D\u062F\u064A\u062B\u0629\\\u062A\u0642\u0631\u064A\u0631 \u062A\u062F\u0631\u064A\u0628\\college event management system\\mycollegeevents\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9FB2EA3-CF76-4B5B-97CD-0CDA1468E4EB}|MyCollegeEvents.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 14,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:13:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:12:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:14:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:16:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:15:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "F:\\\u0627\u0639\u0645\u0627\u0644 \u062D\u062F\u064A\u062B\u0629\\\u062A\u0642\u0631\u064A\u0631 \u062A\u062F\u0631\u064A\u0628\\College Event Management System\\MyCollegeEvents\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
+              "ToolTip": "F:\\\u0627\u0639\u0645\u0627\u0644 \u062D\u062F\u064A\u062B\u0629\\\u062A\u0642\u0631\u064A\u0631 \u062A\u062F\u0631\u064A\u0628\\College Event Management System\\MyCollegeEvents\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-15T20:14:22.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EMAIL_SETUP_GUIDE.md",
+              "DocumentMoniker": "F:\\\u0627\u0639\u0645\u0627\u0644 \u062D\u062F\u064A\u062B\u0629\\\u062A\u0642\u0631\u064A\u0631 \u062A\u062F\u0631\u064A\u0628\\College Event Management System\\MyCollegeEvents\\EMAIL_SETUP_GUIDE.md",
+              "RelativeDocumentMoniker": "EMAIL_SETUP_GUIDE.md",
+              "ToolTip": "F:\\\u0627\u0639\u0645\u0627\u0644 \u062D\u062F\u064A\u062B\u0629\\\u062A\u0642\u0631\u064A\u0631 \u062A\u062F\u0631\u064A\u0628\\College Event Management System\\MyCollegeEvents\\EMAIL_SETUP_GUIDE.md",
+              "RelativeToolTip": "EMAIL_SETUP_GUIDE.md",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-08-15T20:14:09.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\\u0627\u0639\u0645\u0627\u0644 \u062D\u062F\u064A\u062B\u0629\\\u062A\u0642\u0631\u064A\u0631 \u062A\u062F\u0631\u064A\u0628\\College Event Management System\\MyCollegeEvents\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "F:\\\u0627\u0639\u0645\u0627\u0644 \u062D\u062F\u064A\u062B\u0629\\\u062A\u0642\u0631\u064A\u0631 \u062A\u062F\u0631\u064A\u0628\\College Event Management System\\MyCollegeEvents\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAqwCwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T23:03:57.476Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IBackupService.cs",
+              "DocumentMoniker": "F:\\\u0627\u0639\u0645\u0627\u0644 \u062D\u062F\u064A\u062B\u0629\\\u062A\u0642\u0631\u064A\u0631 \u062A\u062F\u0631\u064A\u0628\\College Event Management System\\MyCollegeEvents\\Services\\IBackupService.cs",
+              "RelativeDocumentMoniker": "Services\\IBackupService.cs",
+              "ToolTip": "F:\\\u0627\u0639\u0645\u0627\u0644 \u062D\u062F\u064A\u062B\u0629\\\u062A\u0642\u0631\u064A\u0631 \u062A\u062F\u0631\u064A\u0628\\College Event Management System\\MyCollegeEvents\\Services\\IBackupService.cs",
+              "RelativeToolTip": "Services\\IBackupService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T23:02:58.809Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ExportService.cs",
+              "DocumentMoniker": "F:\\\u0627\u0639\u0645\u0627\u0644 \u062D\u062F\u064A\u062B\u0629\\\u062A\u0642\u0631\u064A\u0631 \u062A\u062F\u0631\u064A\u0628\\College Event Management System\\MyCollegeEvents\\Services\\ExportService.cs",
+              "RelativeDocumentMoniker": "Services\\ExportService.cs",
+              "ToolTip": "F:\\\u0627\u0639\u0645\u0627\u0644 \u062D\u062F\u064A\u062B\u0629\\\u062A\u0642\u0631\u064A\u0631 \u062A\u062F\u0631\u064A\u0628\\College Event Management System\\MyCollegeEvents\\Services\\ExportService.cs",
+              "RelativeToolTip": "Services\\ExportService.cs",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T23:02:40.093Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "F:\\\u0627\u0639\u0645\u0627\u0644 \u062D\u062F\u064A\u062B\u0629\\\u062A\u0642\u0631\u064A\u0631 \u062A\u062F\u0631\u064A\u0628\\College Event Management System\\MyCollegeEvents\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewStart.cshtml",
+              "ToolTip": "F:\\\u0627\u0639\u0645\u0627\u0644 \u062D\u062F\u064A\u062B\u0629\\\u062A\u0642\u0631\u064A\u0631 \u062A\u062F\u0631\u064A\u0628\\College Event Management System\\MyCollegeEvents\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-28T23:00:27.694Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ViewParticipants.cshtml",
+              "DocumentMoniker": "F:\\\u0627\u0639\u0645\u0627\u0644 \u062D\u062F\u064A\u062B\u0629\\\u062A\u0642\u0631\u064A\u0631 \u062A\u062F\u0631\u064A\u0628\\College Event Management System\\MyCollegeEvents\\Views\\Admin\\ViewParticipants.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\ViewParticipants.cshtml",
+              "ToolTip": "F:\\\u0627\u0639\u0645\u0627\u0644 \u062D\u062F\u064A\u062B\u0629\\\u062A\u0642\u0631\u064A\u0631 \u062A\u062F\u0631\u064A\u0628\\College Event Management System\\MyCollegeEvents\\Views\\Admin\\ViewParticipants.cshtml",
+              "RelativeToolTip": "Views\\Admin\\ViewParticipants.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-28T23:00:25.567Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SendEmails.cshtml",
+              "DocumentMoniker": "F:\\\u0627\u0639\u0645\u0627\u0644 \u062D\u062F\u064A\u062B\u0629\\\u062A\u0642\u0631\u064A\u0631 \u062A\u062F\u0631\u064A\u0628\\College Event Management System\\MyCollegeEvents\\Views\\Admin\\SendEmails.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\SendEmails.cshtml",
+              "ToolTip": "F:\\\u0627\u0639\u0645\u0627\u0644 \u062D\u062F\u064A\u062B\u0629\\\u062A\u0642\u0631\u064A\u0631 \u062A\u062F\u0631\u064A\u0628\\College Event Management System\\MyCollegeEvents\\Views\\Admin\\SendEmails.cshtml",
+              "RelativeToolTip": "Views\\Admin\\SendEmails.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-28T23:00:24.727Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AddEvent.cshtml",
+              "DocumentMoniker": "F:\\\u0627\u0639\u0645\u0627\u0644 \u062D\u062F\u064A\u062B\u0629\\\u062A\u0642\u0631\u064A\u0631 \u062A\u062F\u0631\u064A\u0628\\College Event Management System\\MyCollegeEvents\\Views\\Admin\\AddEvent.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\AddEvent.cshtml",
+              "ToolTip": "F:\\\u0627\u0639\u0645\u0627\u0644 \u062D\u062F\u064A\u062B\u0629\\\u062A\u0642\u0631\u064A\u0631 \u062A\u062F\u0631\u064A\u0628\\College Event Management System\\MyCollegeEvents\\Views\\Admin\\AddEvent.cshtml",
+              "RelativeToolTip": "Views\\Admin\\AddEvent.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-28T23:00:23.527Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "F:\\\u0627\u0639\u0645\u0627\u0644 \u062D\u062F\u064A\u062B\u0629\\\u062A\u0642\u0631\u064A\u0631 \u062A\u062F\u0631\u064A\u0628\\College Event Management System\\MyCollegeEvents\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "F:\\\u0627\u0639\u0645\u0627\u0644 \u062D\u062F\u064A\u062B\u0629\\\u062A\u0642\u0631\u064A\u0631 \u062A\u062F\u0631\u064A\u0628\\College Event Management System\\MyCollegeEvents\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T22:31:55.168Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IEmailService.cs",
+              "DocumentMoniker": "F:\\\u0627\u0639\u0645\u0627\u0644 \u062D\u062F\u064A\u062B\u0629\\\u062A\u0642\u0631\u064A\u0631 \u062A\u062F\u0631\u064A\u0628\\College Event Management System\\MyCollegeEvents\\Services\\IEmailService.cs",
+              "RelativeDocumentMoniker": "Services\\IEmailService.cs",
+              "ToolTip": "F:\\\u0627\u0639\u0645\u0627\u0644 \u062D\u062F\u064A\u062B\u0629\\\u062A\u0642\u0631\u064A\u0631 \u062A\u062F\u0631\u064A\u0628\\College Event Management System\\MyCollegeEvents\\Services\\IEmailService.cs",
+              "RelativeToolTip": "Services\\IEmailService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T22:25:47.033Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "F:\\\u0627\u0639\u0645\u0627\u0644 \u062D\u062F\u064A\u062B\u0629\\\u062A\u0642\u0631\u064A\u0631 \u062A\u062F\u0631\u064A\u0628\\College Event Management System\\MyCollegeEvents\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
+              "ToolTip": "F:\\\u0627\u0639\u0645\u0627\u0644 \u062D\u062F\u064A\u062B\u0629\\\u062A\u0642\u0631\u064A\u0631 \u062A\u062F\u0631\u064A\u0628\\College Event Management System\\MyCollegeEvents\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Controllers\\AdminController.cs",
+              "ViewState": "AgIAAOMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T22:31:59.562Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "20250728222821_FixSeedData.cs",
+              "DocumentMoniker": "F:\\\u0627\u0639\u0645\u0627\u0644 \u062D\u062F\u064A\u062B\u0629\\\u062A\u0642\u0631\u064A\u0631 \u062A\u062F\u0631\u064A\u0628\\College Event Management System\\MyCollegeEvents\\Migrations\\20250728222821_FixSeedData.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250728222821_FixSeedData.cs",
+              "ToolTip": "F:\\\u0627\u0639\u0645\u0627\u0644 \u062D\u062F\u064A\u062B\u0629\\\u062A\u0642\u0631\u064A\u0631 \u062A\u062F\u0631\u064A\u0628\\College Event Management System\\MyCollegeEvents\\Migrations\\20250728222821_FixSeedData.cs",
+              "RelativeToolTip": "Migrations\\20250728222821_FixSeedData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T22:31:51.335Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "F:\\\u0627\u0639\u0645\u0627\u0644 \u062D\u062F\u064A\u062B\u0629\\\u062A\u0642\u0631\u064A\u0631 \u062A\u062F\u0631\u064A\u0628\\College Event Management System\\MyCollegeEvents\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
+              "ToolTip": "F:\\\u0627\u0639\u0645\u0627\u0644 \u062D\u062F\u064A\u062B\u0629\\\u062A\u0642\u0631\u064A\u0631 \u062A\u062F\u0631\u064A\u0628\\College Event Management System\\MyCollegeEvents\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-28T22:25:43.9Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "20250728222721_InitialCreate.cs",
+              "DocumentMoniker": "F:\\\u0627\u0639\u0645\u0627\u0644 \u062D\u062F\u064A\u062B\u0629\\\u062A\u0642\u0631\u064A\u0631 \u062A\u062F\u0631\u064A\u0628\\College Event Management System\\MyCollegeEvents\\Migrations\\20250728222721_InitialCreate.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250728222721_InitialCreate.cs",
+              "ToolTip": "F:\\\u0627\u0639\u0645\u0627\u0644 \u062D\u062F\u064A\u062B\u0629\\\u062A\u0642\u0631\u064A\u0631 \u062A\u062F\u0631\u064A\u0628\\College Event Management System\\MyCollegeEvents\\Migrations\\20250728222721_InitialCreate.cs",
+              "RelativeToolTip": "Migrations\\20250728222721_InitialCreate.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T22:31:44.338Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "site.js",
+              "DocumentMoniker": "F:\\\u0627\u0639\u0645\u0627\u0644 \u062D\u062F\u064A\u062B\u0629\\\u062A\u0642\u0631\u064A\u0631 \u062A\u062F\u0631\u064A\u0628\\College Event Management System\\MyCollegeEvents\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\site.js",
+              "ToolTip": "F:\\\u0627\u0639\u0645\u0627\u0644 \u062D\u062F\u064A\u062B\u0629\\\u062A\u0642\u0631\u064A\u0631 \u062A\u062F\u0631\u064A\u0628\\College Event Management System\\MyCollegeEvents\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "wwwroot\\js\\site.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-07-28T22:26:43.383Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IExportService.cs",
+              "DocumentMoniker": "F:\\\u0627\u0639\u0645\u0627\u0644 \u062D\u062F\u064A\u062B\u0629\\\u062A\u0642\u0631\u064A\u0631 \u062A\u062F\u0631\u064A\u0628\\College Event Management System\\MyCollegeEvents\\Services\\IExportService.cs",
+              "RelativeDocumentMoniker": "Services\\IExportService.cs",
+              "ToolTip": "F:\\\u0627\u0639\u0645\u0627\u0644 \u062D\u062F\u064A\u062B\u0629\\\u062A\u0642\u0631\u064A\u0631 \u062A\u062F\u0631\u064A\u0628\\College Event Management System\\MyCollegeEvents\\Services\\IExportService.cs",
+              "RelativeToolTip": "Services\\IExportService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T22:26:11.182Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "EmailService.cs",
+              "DocumentMoniker": "F:\\\u0627\u0639\u0645\u0627\u0644 \u062D\u062F\u064A\u062B\u0629\\\u062A\u0642\u0631\u064A\u0631 \u062A\u062F\u0631\u064A\u0628\\College Event Management System\\MyCollegeEvents\\Services\\EmailService.cs",
+              "RelativeDocumentMoniker": "Services\\EmailService.cs",
+              "ToolTip": "F:\\\u0627\u0639\u0645\u0627\u0644 \u062D\u062F\u064A\u062B\u0629\\\u062A\u0642\u0631\u064A\u0631 \u062A\u062F\u0631\u064A\u0628\\College Event Management System\\MyCollegeEvents\\Services\\EmailService.cs",
+              "RelativeToolTip": "Services\\EmailService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T22:26:07.486Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "F:\\\u0627\u0639\u0645\u0627\u0644 \u062D\u062F\u064A\u062B\u0629\\\u062A\u0642\u0631\u064A\u0631 \u062A\u062F\u0631\u064A\u0628\\College Event Management System\\MyCollegeEvents\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "F:\\\u0627\u0639\u0645\u0627\u0644 \u062D\u062F\u064A\u062B\u0629\\\u062A\u0642\u0631\u064A\u0631 \u062A\u062F\u0631\u064A\u0628\\College Event Management System\\MyCollegeEvents\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T22:25:53.886Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "F:\\\u0627\u0639\u0645\u0627\u0644 \u062D\u062F\u064A\u062B\u0629\\\u062A\u0642\u0631\u064A\u0631 \u062A\u062F\u0631\u064A\u0628\\College Event Management System\\MyCollegeEvents\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "F:\\\u0627\u0639\u0645\u0627\u0644 \u062D\u062F\u064A\u062B\u0629\\\u062A\u0642\u0631\u064A\u0631 \u062A\u062F\u0631\u064A\u0628\\College Event Management System\\MyCollegeEvents\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-28T22:25:41.823Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

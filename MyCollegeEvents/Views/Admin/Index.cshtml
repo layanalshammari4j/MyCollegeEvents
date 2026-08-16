@@ -1,0 +1,174 @@
+@{
+    ViewData["Title"] = "لوحة تحكم المشرفة";
+}
+
+<div class="container-fluid" dir="rtl">
+    <div class="row">
+        <div class="col-12">
+            <div class="jumbotron bg-dark text-white text-center mb-4">
+                <h1 class="display-4">👩‍💼 لوحة تحكم المشرفة</h1>
+                <p class="lead">إدارة الفعاليات والمشاركات</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card bg-primary text-white h-100">
+                <div class="card-body text-center">
+                    <i class="fas fa-plus-circle fa-3x mb-3"></i>
+                    <h5 class="card-title">إضافة فعالية جديدة</h5>
+                    <p class="card-text">إنشاء فعالية جديدة للطالبات</p>
+                    <a href="@Url.Action("AddEvent")" class="btn btn-light btn-lg">
+                        ➕ إضافة فعالية
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card bg-success text-white h-100">
+                <div class="card-body text-center">
+                    <i class="fas fa-calendar-alt fa-3x mb-3"></i>
+                    <h5 class="card-title">عرض الفعاليات</h5>
+                    <p class="card-text">مراجعة جميع الفعاليات المنشأة</p>
+                    <a href="@Url.Action("ViewEvents")" class="btn btn-light btn-lg">
+                        📅 عرض الفعاليات
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card bg-info text-white h-100">
+                <div class="card-body text-center">
+                    <i class="fas fa-users fa-3x mb-3"></i>
+                    <h5 class="card-title">إدارة المشاركات</h5>
+                    <p class="card-text">مراجعة وموافقة المشاركات</p>
+                    <a href="@Url.Action("ViewParticipants")" class="btn btn-light btn-lg">
+                        👥 عرض المشاركات
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card bg-warning text-white h-100">
+                <div class="card-body text-center">
+                    <i class="fas fa-envelope fa-3x mb-3"></i>
+                    <h5 class="card-title">إرسال بريد جماعي</h5>
+                    <p class="card-text">إرسال رسائل للمشاركات</p>
+                    <a href="@Url.Action("SendEmails")" class="btn btn-light btn-lg">
+                        📧 إرسال بريد
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card bg-dark text-white h-100">
+                <div class="card-body text-center">
+                    <i class="fas fa-database fa-3x mb-3"></i>
+                    <h5 class="card-title">النسخ الاحتياطي</h5>
+                    <p class="card-text">إدارة النسخ الاحتياطية</p>
+                    <a href="@Url.Action("BackupRestore")" class="btn btn-light btn-lg">
+                        💾 النسخ الاحتياطي
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card bg-secondary text-white h-100">
+                <div class="card-body text-center">
+                    <i class="fas fa-cog fa-3x mb-3"></i>
+                    <h5 class="card-title">إعدادات البريد</h5>
+                    <p class="card-text">إدارة إعدادات البريد الإلكتروني</p>
+                    <div class="btn-group-vertical d-grid gap-2">
+                        <a href="@Url.Action("TestEmail")" class="btn btn-light btn-sm"
+                           onclick="return confirm('سيتم إرسال بريد اختبار. هل تريدين المتابعة؟')">
+                            🧪 اختبار البريد
+                        </a>
+                        <a href="@Url.Action("EmailSettings")" class="btn btn-warning btn-sm">
+                            ⚙️ إعدادات البريد
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-lg-6 mb-4">
+            <div class="card">
+                <div class="card-header bg-secondary text-white">
+                    <h5 class="mb-0">📊 تصدير البيانات</h5>
+                </div>
+                <div class="card-body">
+                    <p>تصدير بيانات المشاركات بصيغ مختلفة</p>
+                    <div class="btn-group" role="group">
+                        <a href="@Url.Action("ExportExcel")" class="btn btn-success">
+                            📗 تصدير Excel
+                        </a>
+                        <a href="@Url.Action("ExportPdf")" class="btn btn-danger">
+                            📄 تصدير PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6 mb-4">
+            <div class="card">
+                <div class="card-header bg-secondary text-white">
+                    <h5 class="mb-0">📈 إحصائيات سريعة</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row text-center">
+                        <div class="col-4">
+                            <h3 class="text-primary">--</h3>
+                            <small>إجمالي الفعاليات</small>
+                        </div>
+                        <div class="col-4">
+                            <h3 class="text-success">--</h3>
+                            <small>المشاركات المقبولة</small>
+                        </div>
+                        <div class="col-4">
+                            <h3 class="text-warning">--</h3>
+                            <small>في الانتظار</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="alert alert-info">
+                <h5>💡 نصائح للإدارة</h5>
+                <ul class="mb-0">
+                    <li>راجعي طلبات المشاركة بانتظام</li>
+                    <li>أرسلي رسائل تأكيد للمشاركات المقبولة</li>
+                    <li>صدري تقارير دورية عن الفعاليات</li>
+                    <li>تابعي حضور الطالبات في الفعاليات</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .card {
+        transition: transform 0.2s;
+    }
+    
+    .card:hover {
+        transform: translateY(-5px);
+    }
+    
+    .jumbotron {
+        border-radius: 15px;
+        padding: 2rem;
+    }
+</style>

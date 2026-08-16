@@ -1,0 +1,46 @@
+@{
+    ViewData["Title"] = "اعدادات البريد";
+}
+
+<div class="container" dir="rtl">
+    <div class="card">
+        <div class="card-header bg-warning text-center">
+            <h3>اعدادات البريد الالكتروني</h3>
+        </div>
+        <div class="card-body">
+            <div class="alert alert-info">
+                <h5>حالة البريد الالكتروني</h5>
+                <p>الوضع الحالي: 
+                    @if (ViewBag.CurrentSettings.TestMode)
+                    {
+                        <span class="badge bg-warning">وضع الاختبار</span>
+                    }
+                    else
+                    {
+                        <span class="badge bg-success">الارسال الحقيقي</span>
+                    }
+                </p>
+            </div>
+            
+            <table class="table">
+                <tr>
+                    <td>خادم SMTP:</td>
+                    <td>@ViewBag.CurrentSettings.SmtpServer</td>
+                </tr>
+                <tr>
+                    <td>البريد المرسل:</td>
+                    <td>@ViewBag.CurrentSettings.SenderEmail</td>
+                </tr>
+                <tr>
+                    <td>بريد المشرفة:</td>
+                    <td>@ViewBag.CurrentSettings.AdminEmail</td>
+                </tr>
+            </table>
+            
+            <div class="text-center">
+                <a href="@Url.Action("TestEmail")" class="btn btn-primary">اختبار البريد</a>
+                <a href="@Url.Action("Index")" class="btn btn-secondary">العودة</a>
+            </div>
+        </div>
+    </div>
+</div>
