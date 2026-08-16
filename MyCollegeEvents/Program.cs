@@ -41,18 +41,18 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 // كود إنشاء الجداول تلقائياً في قاعدة البيانات عند تشغيل التطبيق
-//using (var scope = app.Services.CreateScope())
-//{
-    //var dbContext = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
-    //try
-    //{
-     //   dbContext.Database.EnsureCreated();
-   // }
-   // catch (Exception ex)
-   // {
-    //    Console.WriteLine($"Database creation warning: {ex.Message}");
-   // }
-//}
+using (var scope = app.Services.CreateScope())
+{
+    var dbContext = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+    try
+    {
+        dbContext.Database.EnsureCreated();
+    }
+   catch (Exception ex)
+    {
+        Console.WriteLine($"Database creation warning: {ex.Message}");
+    }
+}
 
 
 app.Run();
