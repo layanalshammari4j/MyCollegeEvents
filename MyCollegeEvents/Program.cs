@@ -3,6 +3,7 @@ using MyCollegeEvents.Data;
 using MyCollegeEvents.Services;
 AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
 var builder = WebApplication.CreateBuilder(args);
+builder.Environment.EnvironmentName = "Production";
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
