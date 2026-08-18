@@ -3438,19 +3438,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\shamm\\.nuget\\packages\\": {}
+    "/Users/lory/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\shamm\\OneDrive\\المستندات\\GitHub\\MyCollegeEvents\\MyCollegeEvents\\MyCollegeEvents.csproj",
+      "projectUniqueName": "/Users/lory/Downloads/My-project-main/MyCollegeEvents/MyCollegeEvents/MyCollegeEvents.csproj",
       "projectName": "MyCollegeEvents",
-      "projectPath": "c:\\Users\\shamm\\OneDrive\\المستندات\\GitHub\\MyCollegeEvents\\MyCollegeEvents\\MyCollegeEvents.csproj",
-      "packagesPath": "C:\\Users\\shamm\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\shamm\\OneDrive\\المستندات\\GitHub\\MyCollegeEvents\\MyCollegeEvents\\obj\\",
+      "projectPath": "/Users/lory/Downloads/My-project-main/MyCollegeEvents/MyCollegeEvents/MyCollegeEvents.csproj",
+      "packagesPath": "/Users/lory/.nuget/packages/",
+      "outputPath": "/Users/lory/Downloads/My-project-main/MyCollegeEvents/MyCollegeEvents/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\shamm\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/Users/lory/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -3475,7 +3475,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "10.0.400"
+      "SdkAnalysisLevel": "10.0.300"
     },
     "frameworks": {
       "net8.0": {
@@ -3515,19 +3515,15 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[8.0.30, 8.0.30]"
+            "version": "[8.0.29, 8.0.29]"
           },
           {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[8.0.30, 8.0.30]"
+            "name": "Microsoft.NETCore.App.Host.osx-arm64",
+            "version": "[8.0.29, 8.0.29]"
           },
           {
             "name": "Microsoft.NETCore.App.Ref",
-            "version": "[8.0.30, 8.0.30]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[8.0.30, 8.0.30]"
+            "version": "[8.0.29, 8.0.29]"
           }
         ],
         "frameworkReferences": {
@@ -3538,7 +3534,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
